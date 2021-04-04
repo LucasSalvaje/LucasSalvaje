@@ -1,0 +1,69 @@
+/* ---- GENERAL CONTAINER ---- */
+#contact {
+	width: 100vw;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 22vh;
+	text-align: center;
+}
+
+.contact-container{
+	position: relative;
+	width: 100%;
+	min-height: 10vh;
+	margin:auto;
+	text-transform: uppercase;
+	border-bottom: 1px solid $light;
+	h2{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		line-height: 0.3;
+		color: $light-op;
+	}
+	p{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		line-height: 0.9;
+	}
+}
+
+.contact-info{
+	height: 25vh;
+	text-align: left;
+	border-bottom: none;
+}
+.contact-pill{
+	line-height: 1 !important;
+	color: $light !important;
+	width: 60%;
+	font-size: 4vh !important;
+}
+
+#contact-title {
+	text-transform: uppercase;
+	position: relative;
+	top: 10vh;
+}
+
+.contact-block{
+	width: 44%;
+	margin:auto;
+	position: relative;
+	display: block;
+	padding-bottom: 10vh;
+	
+}
+
+#contact-img{
+	height: 60vh;
+	background-image: url('https://res.cloudinary.com/instintosalvaje/image/upload/c_scale,h_728/v1574356354/Instinto%20Salvaje/Home/lucas_marlona.jpg');
+	background-size: cover;
+ 	background-repeat: no-repeat;
+    background-position: center;  
+    margin-bottom: 10vh;
+    filter: grayscale(10%);
+    border-radius: 3px;
+}

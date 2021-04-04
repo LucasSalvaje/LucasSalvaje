@@ -1,0 +1,96 @@
+<!-- TODOS LOS PROYECTOS-->
+
+<script type="text/javascript">
+$("#navBar-list").css('display', 'none');
+</script>
+
+<script type="text/javascript">
+	$(".page-transition-gradient").animate({
+		top:'100vh'
+		},0,"easeInOut",function(){
+	});
+</script>
+
+<script type="text/javascript">
+$(".Voice_h3").css('color', 'rgba(255,255,255,1)');
+$(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
+</script>
+
+<div class="love-container" id="fade-love">
+	<div class="love-gallery-wrap">
+		{{#each data.projects.results}}
+			<div class="love-item">
+				<h5 class="Main-Title" id="{{{@index}}}">{{{@index}}}</h5>
+				<script type="text/javascript">
+					if({{{@index}}}<10){
+						$("#{{{@index}}}").text('0' +"{{{@index}}}");
+					}else{
+					}
+				</script>
+				<h1>{{{featrueText}}}</h1>
+				
+				<p class="love-works-categories" style="color: rgba(226,226,226,0.4)">{{#each categories}} {{name}} -{{/each}}</p>
+				<script type="text/javascript">
+				$('.love-works-categories').text(function(_, txt) {
+					return txt.slice(0, -1);
+				});</script>
+				<a alt="{{projectUrl slug}}">
+				</a">
+				<div class="love-item-image" style="background-image: url('{{heroImage.url}}')"></div>
+			</div>
+		{{/each}}
+	</div>
+	<div id="background-color" data-aos="flip-up"></div>
+
+</div>
+
+<!-- MOBILE-->
+<div id="featured_project">
+</div>
+	<script src="/js/masonry/masonry.pkgd.min.js"></script>
+	<div class="masonry" style="columns: 2">
+		{{#each data.projects.results}}
+			<div class="mItem">
+				<a alt="{{projectUrl slug}}" style="padding-top: 0px; background-color: none; width: 36vw; position: static;">
+					<img class="img_masonry" src="{{heroImage.url}}">
+					<h3 class="Hello_h2" style="
+						color: #fff;
+						display: inline-block;
+						font-size: 1.0em;
+						text-align: left;
+						padding: 0vh 0 0vh 0;
+						margin: -12vh 0 0 6vw;
+						transform: translate(0, -6vh);
+						width: 36vw">
+						{{{featrueText}}}<br>
+							<span class="works-categories-span" style="
+							font-size: 0.6em;
+							opacity: 0.6;">
+							{{#each categories}} {{name}} -{{/each}}
+							<span>
+					</h3>
+					<script type="text/javascript">
+						$('.works-categories-span').text(function(_, txt) {
+							return txt.slice(0, -1);
+						});
+					</script>
+				</a>
+			</div>
+		{{/each}}
+	</div>
+
+<div style="width: 100vw; height: 5vh;"></div>
+</main>
+
+
+<script type="text/javascript">
+$(".love-item").hover(function() {
+    $(this).siblings(".love-item").css('filter', 'blur(16px) grayscale(0%)');
+    $(this).siblings(".love-item").css('opacity', '0.2');
+}, function() {
+    $(this).siblings(".love-item").css('filter', 'blur(0px) grayscale(0%)');
+        $(this).siblings(".love-item").css('opacity', '1');
+});
+</script>
+
+

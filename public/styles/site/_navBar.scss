@@ -1,0 +1,97 @@
+.navLink{
+	position: fixed;
+	z-index: 50000;
+	color: #fff;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 40vw;
+	}
+	a{
+	font-family:"GT-Cinetype-Bold";
+	font-size: 3vh;
+	}
+
+	&:hover .navBar-hover_colors{
+		pointer-events: none;
+		width:100%;
+		transition: 0.6s;
+		@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+			width: 50%;
+		}
+	}
+	&:hover {
+		cursor:pointer;
+	}
+}
+
+.navInfo{
+	position: fixed;
+	z-index: 1000;
+	color: $dark;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		display: none;
+	}
+	a{
+		font-family: 'Flyer', serif !important;
+
+	}
+}
+
+#navLink-Logo{
+	top: 5vh;
+	left: 6vw;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		a{
+			color: white !important;
+		}
+	}
+}
+
+#navLink-Works{
+	top: 5vh;
+	right: 6vw;
+	text-align: right;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		a{
+			color: white !important;
+		}
+	}
+}
+
+#navLink-About{
+	bottom: 5vh;
+	left: 6vw;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		a{
+			color: white !important;
+		}
+	}
+}
+
+#navLink-ECO{
+	bottom: 5vh;
+	right: 6vw;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		a{
+			color: white !important;
+		}
+	}
+}
+
+#navLink-Mail{
+	transform: rotate(90deg);
+	bottom: 25vh;
+	left: -50px;
+}
+
+
+.navBar-hover_colors{
+	position: absolute;
+	width: 0%;
+	height: 4.2vh;
+	background: $Button-BW;
+	transition: 0.6s;
+	top: 0;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		display: none;
+	}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Lucas Ortiz Estefanell</title>
+    <meta name="description" content="Mustidisciplinary Storyteller">
+    <meta name="author" content="Lucas Ortiz">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta charset="utf-8" />
+    <!-- Include CSS -->
+    <link href="/styles/site.css" type="text/css" rel="stylesheet">
+    <!-- Activate / Deativate Debug -->
+    <script src="/js/debug.js"></script>
+    <!-- Include jQuery 3.3.1-->
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <!-- Include Easing -->
+    <script type="text/javascript" src="/js/easing_1_3.js"></script>
+    <!-- Include p5 -->
+    <script type="text/javascript" src="/js/p5.min.js"></script>
+    <!-- Include AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Include Noise -->
+    <script src="/js/noise/grained.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="/Favicon.png" type="image/x-icon">
+
+		<!--[if lt IE 9]>
+			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
+			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154843600-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154843600-1');
+</script>
+
+
+<!-- Hotjar Tracking Code for www.ortizestefanell.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1622860,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!-- RRSSS -->
+<meta property="og:image" content="http://res.cloudinary.com/hm6oi1hli/image/upload/v1577100458/r3xd0sziihcxg2fwiigh.jpg">
+
+
+</head>
+    {{>navLinks}}
+    {{>navBar}}
+
+<body id="hello_world" style="height: 100vh !important;">
+
+
+
+    <div id="vineting"></div>
+    {{>noise}}
+
+	{{{body}}}
+</body>
+    {{>footer}}
+
+
+
+</html>
+
+        <!--
+        Flash messages allow you to display once-off status messages to users, e.g. form
+        validation errors, success messages, etc
+
+            {{#if messages}}
+    <div id="flash-messages" class="container">
+        {{#if messages.info}}
+        <div class="alert alert-info">
+                {{{flashMessages messages.info}}}
+        </div>
+        {{/if}}
+        {{#if messages.success}}
+        <div class="alert alert-success">
+                {{{flashMessages messages.success}}}
+        </div>
+        {{/if}}
+        {{#if messages.warning}}
+        <div class="alert alert-warning">
+                {{{flashMessages messages.warning}}}
+        </div>
+        {{/if}}
+        {{#if messages.error}}
+        <div class="alert alert-danger">
+                {{{flashMessages messages.error}}}
+        </div>
+        {{/if}}
+    </div>
+    {{/if}}
+
+    
+    -->

@@ -1,0 +1,41 @@
+<div class="navLink" id="navLink-Logo" data-aos="fade-in" data-aos-delay="0" data-aos-anchor="body" >
+	<a href="/" class="Voice_h3">Lo Salvaje<br></span><span style="font-size: 1.5vh;">STUDIO®</span></a>
+	<div class="navBar-hover_colors"></div>
+</div>
+
+<div class="navLink" id="navLink-Works" data-aos="fade-in" data-aos-delay="0" data-aos-anchor="body">
+	<a href="/works" class="Voice_h3">Work</a>
+	<div class="navBar-hover_colors"></div>
+</div>
+
+<div class="navLink" id="navLink-About" data-aos="fade-in" data-aos-delay="0" data-aos-anchor="body">
+	<a href="/about" class="Voice_h3">About & Contact</a>
+	<div class="navBar-hover_colors"></div>
+</div>
+
+<!--
+<div class="navLink" id="navLink-ECO">
+	<a href="/" class="Voice_h3">Contact</a>
+	<div class="navBar-hover_colors"></div>
+</div>
+-->
+
+<div class="navInfo" id="navLink-Mail">
+	<a href="/" class="Cintillo">Lo Salvaje estudio ® - 2020 - Spain</a>
+</div>
+
+
+  <script type="text/javascript">
+		$(function(){
+	    $("a").click(function(evt){
+	    	var link = $(this).attr("alt");
+	    	/* Local : */ //link = "http://localhost:5000" + link;
+	    	/* Domain : */  link = "http://www.ortizestefanell.com" + link;
+	    	$(".page-transition-gradient").animate({
+	    		top:'0',
+	    	},860,"easeInOut",function(){
+	    		window.location.href = link;
+	    	});
+	    });
+	});
+</script>

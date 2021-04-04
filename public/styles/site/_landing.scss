@@ -1,0 +1,97 @@
+
+#landing-tile_info-container{
+	position: relative;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	bottom: 0;
+	background-image: url("https://res.cloudinary.com/hm6oi1hli/image/upload/v1575544109/lkat4ep2ll3b6vqjhlhx.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	z-index: 0;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		height: 75vh;
+		background-image: url("https://res.cloudinary.com/instintosalvaje/image/upload/v1574441958/DRAG.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position: center;
+	}
+}
+
+#landing-title-container {
+	position: absolute;
+	display: block;
+	width: 100vw;
+	height: 30vh;
+	top: 35vh;
+	min-height: 200px;
+	line-height: 35vh;
+	z-index: 10;
+	h1{
+		margin: auto;
+		text-align: center;
+		width: 80%;
+		padding: 2.7vh 0% 0 0%;
+	}
+
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		width: 100vw;
+		height: 25vh;
+		top: 35vh;
+		min-height: 0px;
+		line-height: 35vh;
+		z-index: 10;
+		h1{
+			margin: auto;
+			text-align: center;
+			width: 90%;
+			font-size: 6vh;
+			padding: 0.7vh 0% 0 0%;
+		}
+	}
+}
+
+
+.landing-info_text-container {
+	z-index: 10;
+	position: absolute;
+	display: block;
+	width: 100vw;
+	height: 35vh;
+	padding: 0% 0%;
+	text-align: center;
+	font-family: "SerapionII-Italic";
+}
+
+#landing-main_title{
+	text-transform: uppercase;
+}
+
+
+#landing-info-1{
+	top: 0;
+	p{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	}
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+	top: 10vh;
+
+	}
+}
+
+#landing-info-2{
+	top: 65vh;
+	p{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	}
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		top: 55vh;
+	}
+}

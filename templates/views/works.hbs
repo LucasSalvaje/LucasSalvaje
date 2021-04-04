@@ -1,0 +1,202 @@
+
+<script type="text/javascript">
+	$(".page-transition-gradient").animate({
+		top:'100vh'
+		},0,"easeInOut",function(){
+	});
+	$('#hello_world').css('height','100vh')
+</script>
+
+
+<!-- 
+<div id="home-tile_info-container"></div>
+-->
+
+<div id="home-tile_info-container" class="home_info-title-container" style="z-index: 1000000; pointer-events: none; position: absolute; background-image: none !important">
+	<div class="home-info_text-container" id="info-1">
+		<p class="Curly_text_p"></p>
+	</div>
+	<div id="home-title-container"  data-aos="fade-up" data-aos-delay="0">
+		{{#each generals}}
+		{{#ifEquals title "About"}}
+		<h1 class="Hello_h2" id="index-title" style="color: black !important; text-transform: uppercase;">{{{HeroText}}}</h1>
+		{{/ifEquals}}
+		{{/each}}
+	</div>
+</div>
+
+
+<!--
+**************** -->
+
+
+
+<main id="works-all"  data-aos="fade-up">
+	<div data-scroll>
+		<div class="content">
+			<!-- HOME IMAGE-->
+			{{#each generals}}
+			{{#ifEquals title "About"}}
+			<div style=" position: fixed; width: 80vw; height: 70vh; top: 0; margin-top:15vh;overflow: hidden; border-radius: 6px; box-shadow: 6px 6px 60px rgba(0,0,0,0.6);">
+				<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
+								<iframe allow="autoplay;" src="https://player.vimeo.com/video/{{{video_WORKS}}}?background=true" style="
+										position:absolute;
+										top:0%;
+										left: 0%;
+										width:100vw;
+										height:100vh; 
+										transform: translate(-10vw, -10vh);
+										overflow: hidden;
+										pointer-events: none;
+										" frameborder="0"></iframe>
+				</div>
+			</div>
+			
+			<!--
+			<div class="item" style="opacity: 1;">
+				<div class="item__img-wrap">
+					<a alt="/works"  style="">
+						<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
+							<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
+								<iframe allow="autoplay;" src="https://player.vimeo.com/video/{{{video_WORKS}}}?background=true" style="
+										position:absolute;
+										top:0%;
+										left: 0%;
+										width:100vw;
+										height:120vh;
+										transform: translate(-6%,-15%); 
+										overflow: hidden;
+										pointer-events: none;
+										" frameborder="0"></iframe>
+							</div>
+						</div>
+						<div class="item-hover_container">
+							<p>See all projects</p>
+						</div>
+					</a>
+				</div>
+				<div class="item__caption">
+					<a alt="{{projectUrl slug}}">
+						<h2 class="item__caption-title Hello_h2" data-aos="fade-up"></h2>
+					</a>
+					<p class="item__caption-copy Cintillo works-categories" data-aos="fade-in" data-aos-delay="550" data-aos-anchor=".item__caption-title Hello_h2">{{#each categories}} {{name}} -{{/each}}</p>
+				</div>
+			</div>
+		-->
+		{{/ifEquals}}
+	{{/each}}
+			<!-- **************** -->
+			{{#each data.projects.results}}
+			<!-- ****************
+			<div class="item">
+				<div class="item__img-wrap">
+					<a alt ="{{projectUrl slug}}">
+						<div class="item__img item__img--t1" style="background-image: url('{{heroImage.url}}');">
+							{{#if heroVideo}}
+							<div class="works-featured_image" style="background-image: url('{{heroImage.url}}');">
+								<iframe allow="autoplay;" src="https://player.vimeo.com/video/{{heroVideo}}?background=true" style="
+										position:absolute;
+										top:0%;
+										left: 0%;
+										width:150vw;
+										height:130vh;
+										transform: translate({{heroVideoPositionX}}%,{{heroVideoPositionY}}%); 
+										overflow: hidden;
+										pointer-events: none;
+										" frameborder="0"></iframe>
+							</div>
+							{{else}}{{/if}}
+						</div>
+						<div class="item-hover_container">
+							<p>Open</p>
+						</div>
+					</a>
+				</div>
+				<div class="item__caption">
+					<a alt="{{projectUrl slug}}">
+						<h2 class="item__caption-title Hello_h2" data-aos="fade-up">{{{featrueText}}}</h2>
+					</a>
+					<p class="item__caption-copy Cintillo works-categories" data-aos="fade-in" data-aos-delay="550" data-aos-anchor=".item__caption-title Hello_h2">{{#each categories}} {{name}} -{{/each}}</p>
+				</div>
+			</div>
+			-->
+			{{/each}}
+		</div>
+	</div>
+
+
+
+{{#each generals}}
+		{{#ifEquals title "About"}}
+			<style type="text/css">
+				.item__img-wrap {
+					border-radius: {{{WORKS_BORDER_RADIUS}}}px !important;
+				}
+			</style>
+		{{/ifEquals}}
+{{/each}}
+
+
+	<!-- MOBILE-->
+	
+	<div id="featured_project">
+		{{#each generals}}
+		{{#ifEquals title "About"}}
+		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
+			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
+				<iframe allow="autoplay;" class="video-featured" src="https://player.vimeo.com/video/{{{video_WORKS}}}?background=true" style="
+					position:absolute;
+					top:0%;
+					left: 0%;
+					overflow: hidden;
+					pointer-events: none;
+					" frameborder="0">				
+				</iframe>
+			</div>
+		</div>
+		{{/ifEquals}}
+		{{/each}}
+	</div>
+
+	<div class="featured_project-red">
+		<div class="home-block" style="padding-bottom: 10vh; padding-top: 10vh;border-bottom: 0;" data-aos="fade-up" data-aos-delay="0">
+			<div class="home-container home-info" id="pill_home">
+				{{#each generals}}{{#ifEquals title "About"}}
+				<h2 class="Hello_h2 contact-pill" style="font-size: 6vh !important; line-height: 6vh !important; width: 100%; color: rgb(1,1,1) !important">{{{HeroText}}}<br><br><span style="text-align: right; padding-left: 80vw;">↓</span></h2>
+				{{/ifEquals}}{{/each}}
+			</div>
+		</div>
+	</div>
+
+
+	<div class="masonry">
+		{{#each data.projects.results}}
+		<div class="mItem">
+			<a alt="{{projectUrl slug}}">
+				<h3 class="Hello_h2" style="color: #fff">{{{featrueText}}}</h3>
+			</a>
+			<p class="Cintillo love-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
+			<img class="img_masonry" src="{{heroImage.url}}">
+		</div>
+		{{/each}}
+		<div style="width: 100vw; height: 5vh;">
+		</div>
+	</div>
+</main>
+
+	<!-- SCRIPTS-->
+
+
+<script type="text/javascript">
+$('.works-categories').text(function(_, txt) {
+	return txt.slice(0, -1);
+});</script>
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/demo.js"></script>
+
+<script type="text/javascript">
+$('.love-categories').text(function(_, txt) {
+	return txt.slice(0, -1);
+});</script>
+

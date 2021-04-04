@@ -1,0 +1,98 @@
+/* Estilos de texto */
+
+/* Titular */
+
+.Main-Title{
+	font-family:"GT-Cinetype-Bold";
+	font-size: 12vh;
+	line-height: 1em;
+    -webkit-text-fill-color: rgba(255,255,255,0.2);
+	-webkit-text-fill-opacity: 0.1;
+	-webkit-text-stroke: 1px $dark;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+	}
+}
+
+.Hello_h2{
+	font-size: 2em;
+	color: $light;
+	font-family: 'GT-Cinetype-Regular';
+	font-weight: 300;
+	letter-spacing: 1px;
+	@media screen and (max-device-width: 420px) {
+        font-size: 1em;
+    }
+}
+
+.Voice_h3{
+	font-size: 1.2em;
+	color: $light;
+	font-family: 'GT-Cinetype-Light';
+	font-weight: 100;
+	letter-spacing: 1px;
+	@media screen and (max-device-width: 420px) {
+        font-size: 1em;
+    }
+}
+
+.Common_Text_p{
+	text-transform: none;
+	font-family: 'GT-Cinetype-Regular';
+	font-style: normal;
+	font-weight: 300;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		color: $light;
+	}
+}
+
+.Curly_text_p{
+	font-family: 'SerapionII-Italic', serif !important;
+	font-style: italic;
+	color: $light;
+	font-size: 1.6rem;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 1.4rem;
+		color: $light-op;
+	}
+}
+
+.Curly_text_mini{
+	font-family: 'SerapionII-Italic', serif !important;
+	font-style: italic;
+	color: $light;
+	font-size: 1rem;
+	opacity:0.4;
+	letter-spacing: 1px;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 1.4rem;
+		color: $light-op;
+	}
+}
+
+
+.quote{
+	font-family: 'SerapionII-Italic', serif !important;
+	font-style: italic;
+	color: $light;
+	font-size: 1.6rem;
+	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+		font-size: 1.4rem;
+		color: $light-op;
+	}
+}
+
+
+
+.Cintillo{
+	font-family: 'Flyer';
+	color: $light-op;
+	font-size: 1.2em;
+}
+
+.navBar-ittem{
+	font-family: 'SerapionII-Italic';
+	color: $light;
+	font-size: 1em;
+}

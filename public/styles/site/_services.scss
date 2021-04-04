@@ -1,0 +1,96 @@
+#services-table-container{
+	width: 60vw;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin-left: 20vw;
+}
+#services-table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid light-op;
+	text-align: center;
+	font-family: "GT-Cinetype-Light";
+	color: $light;
+	margin-bottom: 8vh;
+	position: relative;
+	tbody {
+	  display: table-cell;
+	}
+}
+
+ tr, td{
+ 	z-index: 10;
+	border-collapse: collapse;
+	border: 1px solid $light-op;
+	text-align: center;
+	font-family: "GT-Cinetype-Light";
+	color: $light;
+	font-weight: 100;
+	margin-bottom: 8vh;
+	padding: 0;
+}
+
+td{
+	z-index: 10;
+	height: 5vh;
+	width: 25vw;
+	transition: 0.3s;
+	font-size: 1.6em;
+	line-height: 1em;
+	padding-bottom: 10vh;
+	span {
+		font-size: 0.8em;
+		opacity: 0.6;
+		text-align: left;
+		font-family:"SerapionII-Italic"; 
+	}
+	&:hover{
+		background-color: rgb(28,29,30);
+		color: white;
+		box-shadow:inset 3px 4px 16px 1px rgba(0,0,0,1);
+	}
+}
+
+
+
+/*
+#services-table{
+	width: 100%;
+}
+
+table, th, td{
+	border: 1px solid rgb(28,29,30);
+	text-align: center;
+	font-family: DRUK;
+	margin-bottom: 8vh;
+}
+
+td{
+	height: 40vh;
+	width: 25vw;
+	background-color: white;
+	transition: 0.5s;
+	padding: 4vw 5vh;
+
+	h6{
+		font-size: 6.6em;
+		line-height: 0.8em;
+	}
+
+	p{
+		font-size: 2em;
+		line-height: 0.8em;
+		opacity: 0.2;
+		position: absolute;
+		padding-top: 6em;
+		text-align: center;
+		margin: auto;
+	}
+
+	&:hover{
+			background-color: white;
+		box-shadow:inset 3px 2px 16px 0px #8e6c6c;
+	}
+}
+*/

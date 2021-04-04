@@ -1,0 +1,251 @@
+@import "site/variables";
+@import "site/layout";
+
+@import "site/fonts";
+@import "site/textStyles";
+@import "site/navBar";
+
+@import "site/project";
+@import "site/services";
+@import "site/love";
+@import "site/contact";
+@import "site/works";
+@import "site/worksFormat";
+@import "site/landing";
+@import "site/index";
+
+
+@import "site/wip";
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $dark;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    cursor: crosshair;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+        padding: 0;
+    margin: 0;
+}
+
+html:active{
+
+}
+
+:root { 
+    color: #FFF;
+
+}
+
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+/* ---- body ---- */
+
+.light {
+    height: 100vh;
+    width: 100vW;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    background-color: $white;
+    font-family: "BC_FALSTER-Regular";
+    animation: colorchange 50s infinite;
+    -webkit-animation: colorchange 50s infinite;
+    #project-img_34-img3{
+        box-shadow: 0 0 123px 0 rgba(0,0,0,0);
+    }
+}
+
+.dark{
+    height: 100vh;
+    width: 100vW;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    font-family: "BC_FALSTER-Regular";
+    background-color: $black;
+    h1{
+    color: $white ;
+    }
+    #project-img_34-img3{
+        box-shadow: 0 0 123px 0 $black;
+    }
+}
+
+
+@keyframes colorchange {
+    0% {
+        background: $white;
+    }
+    50% {
+        background: $white;
+    }
+    100% {
+        background: $white;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background: $white;
+    }
+    50% {
+        background: $white;
+    }
+    100% {
+        background: $white;
+    }
+}
+/* ---- ---- */
+
+/* ---- main ---- */
+
+.main {
+    position: relative;
+    /* for page-nav */
+}
+
+.main__page {}
+
+
+/* container
+------------------------- */
+
+.container {
+    margin-top: -310px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 100vw;
+}
+
+.container--wide {
+    max-width: 100vw;
+}
+
+.container .duo.example {
+    max-width: none;
+}
+
+
+/* desktop */
+
+@media screen and ( min-width: 960px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+/* Canvas control mouse
+------------------------- */
+
+#canvasContainer {
+    cursor: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 800;
+    pointer-events: none;
+    @media screen and (max-device-width: 420px) {
+        display: none;
+    }
+}
+
+#canvasContainer_yellow {
+    filter: blur(16px);
+    cursor: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 800;
+    pointer-events: none;
+    @media screen and (max-device-width: 420px) {
+        display: none;
+    }
+}
+
+/* Iphone tumbado
+------------------------- 
+
+@media only screen and (orientation: landscape) and (max-device-width: 420px) {}
+
+*/
+
+/* Effects */
+
+#vineting{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    box-shadow:inset 0px 0px 100vw 6vw rgba(28,29,30,0.2);
+    z-index: 10000;
+    @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+        box-shadow:inset 0px 0px 20vw 3vw rgba(28,29,30,0.6);
+    }
+}
+
+
+#noise-container{
+    opacity: 0.10;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+        display: block;
+    }
+}
+#noise{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hello_world{
+    height: 100vh;
+}

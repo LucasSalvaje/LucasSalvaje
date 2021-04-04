@@ -1,0 +1,124 @@
+
+h1{
+    font-family: "GT-Cinetype-Bold";
+    font-weight: 500;
+    @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+  }
+}
+
+
+h2{
+    font-family: "GT-Cinetype-Regular";
+    font-weight: 300;
+    @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+  }
+}
+
+
+h5 {
+    font-family: "GT-Cinetype-Regular";
+    font-size: 14vh;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 1.8em;
+    @media screen and (max-device-width: 420px) {
+        font-size: 1.4em;
+    }
+}
+
+p {
+    font-weight: 100;
+    font-size: 1.16em;
+    line-height: 1.65em;
+    @media screen and (max-device-width: 420px) {
+        font-size: 1.26rem;
+        line-height: 1.35rem;
+        margin-bottom: 0px;
+    }
+}
+
+.p-bold{
+        font-family: "GT-Cinetype-Regular" !important;
+        font-weight: 600;
+    @media screen and (max-device-width: 420px) {
+        font-size: 0.9rem;
+        line-height: 1.35rem;
+        margin-bottom: 0px;
+    }
+}
+
+.p-text{
+     @media screen and (max-device-width: 420px) {
+        font-size: 1.26em;
+        line-height: 1.66rem;
+        font-family: "GT-Cinetype-Regular" !important;
+        p{
+          line-height: 1.66rem;
+          font-family: "GT-Cinetype-Regular" !important;
+
+        }
+    }
+}
+
+a{
+  font-family:"GT-Cinetype-Bold"; 
+  text-decoration: none;
+  font-size: 0.98em;
+}
+
+
+/* -------- LOAD FONTS ----- */
+
+@font-face {
+  font-family: "GT-Cinetype-Bold";
+  src: url("../fonts/GT-Cinetype-Bold.otf?1443935296");
+  src: url("../fonts/GT-Cinetype-Bold.otf?&1443935296#iefix") format("embedded-opentype"), url("../fonts/GT-Cinetype-Bold.woff2?1538030684") format("woff2"); 
+  font-weight: bold;
+  font-style: bold;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "GT-Cinetype-Regular";
+  src: url("../fonts/GT-Cinetype-Regular.otf?1443935296");
+  src: url("../fonts/GT-Cinetype-Regular.otf?&1443935296#iefix") format("embedded-opentype"), url("../fonts/GT-Cinetype-Regular.woff2?1538030684") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "GT-Cinetype-Light";
+  src: url("../fonts/GT-Cinetype-Light.otf?1443935296");
+  src: url("../fonts/GT-Cinetype-Light.otf?&1443935296#iefix") format("embedded-opentype"), url("../fonts/GT-Cinetype-Light.woff2?1538030684") format("woff2"); 
+  font-weight: lighter;
+  font-style: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+@font-face {
+  font-family: "SerapionII-Italic";
+  src: url("../fonts/SerapionIIItalic.otf?1443935296");
+  src: url("../fonts/SerapionIIItalic.otf?&1443935296#iefix") format("embedded-opentype"), url("../fonts/SerapionIIItalic.woff2?1538030684") format("woff2"); 
+  font-weight: normal;
+  font-style: italic;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+  font-family: "Flyer";
+  src: url("../fonts/Flyerfonts-Distortion.otf?1443935296");
+  src: url("../fonts/Flyerfonts-Distortion.otf?&1443935296#iefix") format("embedded-opentype"), url("../fonts/Flyerfonts-Distortion.woff2?1538030684") format("woff2"); 
+  font-weight: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+

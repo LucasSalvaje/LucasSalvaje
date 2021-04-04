@@ -1,0 +1,34 @@
+<script>
+AOS.init({
+	duration: 1000,
+	easing: 'ease-in-out',
+	once: 'false',
+	mirror: 'false',
+	anchorPlacement: 'top-bottom'
+});
+$('#menu_bottom').hide();
+$("#hello_world").css('opacity','1');
+
+</script>
+
+
+<div class="page-transition-gradient" style="display: none;">
+	<div class="quote courtain-text">
+	</div>
+</div>
+  
+
+  <script type="text/javascript">
+		$(function(){
+	    $("a").click(function(evt){
+	    	var link = $(this).attr("alt");
+	    	/* Local : */ //link = "http://localhost:5000" + link;
+	    	/* Domain : */  link = "http://www.ortizestefanell.com" + link;
+	    	$("#hello_world").animate({
+	    		opacity:'0',
+	    	},1000,"easeInOut",function(){
+	    		window.location.href = link;
+	    	});
+	    });
+	});
+</script>
