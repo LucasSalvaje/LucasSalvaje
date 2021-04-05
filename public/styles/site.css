@@ -2756,7 +2756,8 @@ a:focus {
     width: 20%;
     padding: 18vh 0% 0 0%;
     max-width: 60vw;
-    font-family: 'Flyer'; }
+    font-family: 'GT-Cinetype-Bold';
+    display: none; }
   @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
     #home-title-container {
       width: 100vw;
@@ -2770,7 +2771,7 @@ a:focus {
         text-align: center;
         width: 90%;
         font-size: 6vh;
-        padding: 0.7vh 0% 0 0%; } }
+        padding: 0.9vh 0% 0 0%; } }
 
 .home-info_text-container {
   z-index: 10;
