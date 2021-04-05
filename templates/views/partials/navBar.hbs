@@ -22,8 +22,8 @@ $("#hello_world").css('opacity','1');
 		$(function(){
 	    $("a").click(function(evt){
 	    	var link = $(this).attr("alt");
-	    	/* Local : */ //link = "http://localhost:5000" + link;
-	    	/* Domain : */  link = "http://www.ortizestefanell.com" + link;
+	    	/* Local : */ link = "http://localhost:5000" + link;
+	    	/* Domain : */ //  link = "http://www.ortizestefanell.com" + link;
 	    	$("#hello_world").animate({
 	    		opacity:'0',
 	    	},1000,"easeInOut",function(){
