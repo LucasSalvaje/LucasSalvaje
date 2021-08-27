@@ -138,14 +138,18 @@ $transition_love : 1s;
 .works-dv-ittem{
   display: none;
   @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
-        display: block;
-        width: 90%;
-        margin-left: 5%;
-        height: auto;
-        min-height: 200px;
-        margin-bottom: 40px;
-        position: relative;
+      display: block;
+      width: 96%;
+      margin: auto;
+      height: auto;
+      min-height: 200px;
+      margin-bottom: 10px;
+      position: relative;
   }
+}
+
+.works-dv-ittem-container{
+  background-color: blue;
 }
 
 .works-dv-bg-img{
