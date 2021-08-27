@@ -76,7 +76,18 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 		</div>
 	</div>
 
+{{#each data.projects.results}}
+		<div class="works-dv-ittem">
+			<a alt="{{projectUrl slug}}">
+				<h3 class="Hello_h2" style="color: #fff">{{{featrueText}}}</h3>
+			</a>
+			<p class="Cintillo love-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
+			<img class="works-dv-bg-img" src="{{heroImage.url}}">
+		</div>
+		{{/each}}
 
+
+<!--
 	<div class="masonry">
 		{{#each data.projects.results}}
 		<div class="mItem">
@@ -91,7 +102,7 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 		</div>
 	</div>
 </main>
-
+-->
 	<!-- SCRIPTS-->
 
 

@@ -135,6 +135,21 @@ $transition_love : 1s;
 }
 
 
+.works-dv-ittem{
+  display: none;
+  @media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        min-height: 200px;
+        background-color: blue;
+        margin-bottom: 200px;
+  }
+}
+
+
+/*
 
 #archive-featured_project{
 	height: 20vh;
@@ -228,3 +243,4 @@ $transition_love : 1s;
 		columns: 1;
 	}
 }
+*/
