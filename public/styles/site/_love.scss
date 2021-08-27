@@ -143,14 +143,25 @@ $transition_love : 1s;
         margin-left: 5%;
         height: auto;
         min-height: 200px;
-        background-color: blue;
         margin-bottom: 200px;
+        position: relative;
   }
 }
 
 .works-dv-bg-img{
   width: 100%;
+}
+
+.works-dv-title{
   position: absolute;
+  text-align:center;
+  width: 100%;
+}
+
+.works-dv-categories{
+  position: absolute;
+  text-align:center;
+  width: 100%;
 }
 
 
