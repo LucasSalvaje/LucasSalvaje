@@ -84,7 +84,6 @@ a:focus {
 }
 
 .item::before {
-
 	counter-increment: figure;
 	content: counter(figure, decimal-leading-zero);
 	font-family:"GT-Cinetype-Bold";
