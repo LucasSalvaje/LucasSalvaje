@@ -46,46 +46,8 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 
 
 <!-- MOBILE-->
-	
-	<div id="featured_project">
-		{{#each generals}}
-		{{#ifEquals title "About"}}
-		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
-			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
-				<iframe allow="autoplay;" class="video-featured" src="https://player.vimeo.com/video/{{{video_WORKS}}}?background=true" style="
-					position:absolute;
-					top:0%;
-					left: 0%;
-					overflow: hidden;
-					pointer-events: none;
-					" frameborder="0">				
-				</iframe>
-			</div>
-		</div>
-		{{/ifEquals}}
-		{{/each}}
-	</div>
-
-	<div class="featured_project-red">
-		<div class="home-block" style="padding-bottom: 10vh; padding-top: 10vh;border-bottom: 0;" data-aos="fade-up" data-aos-delay="0">
-			<div class="home-container home-info" id="pill_home">
-				{{#each generals}}{{#ifEquals title "About"}}
-				<h2 class="Hello_h2 contact-pill" style="font-size: 6vh !important; line-height: 6vh !important; width: 100%; color: rgb(1,1,1) !important">{{{HeroText}}}<br><br><span style="text-align: right; padding-left: 80vw;">↓</span></h2>
-				{{/ifEquals}}{{/each}}
-			</div>
-		</div>
-	</div>
 
 
-<!-- -->
-	<div class="works-dv-ittem">
-			<a alt="{{projectUrl slug}}">
-				<h3 class="Hello_h2 works-dv-title" style="color: #fff"></h3>
-			</a>
-			<p class="Cintillo love-c@ategories works-dv-categories" style="color: rgba(255,255,255,1)"></p>
-			<img class="works-dv-bg-img" src="{{heroImage.url}}">
-		</div>
-<!-- -->
 {{#each data.projects.results}}
 		<div class="works-dv-ittem">
 			<a alt="{{projectUrl slug}}">
