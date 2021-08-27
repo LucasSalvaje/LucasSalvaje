@@ -157,15 +157,17 @@ $transition_love : 1s;
 .works-dv-title{
   position: absolute;
   text-align: center;
-  width: 90%;
+  width: 100%;
   font-size: 2.5rem;
   padding: 30px 0px 40px 0px;
+  pointer-events: none;
 }
 
 .works-dv-categories{
   position: absolute;
   text-align:center;
   width: 100%;
+  pointer-events: none;
 }
 
 
