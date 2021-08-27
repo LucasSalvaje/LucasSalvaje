@@ -80,9 +80,10 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 
 {{#each data.projects.results}}
 		<div class="works-dv-ittem">
-					<h3 class="Hello_h2 works-dv-title" style="color: #fff">{{{featrueText}}}</h3>
 				<p class="Cintillo love-c@ategories works-dv-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
+				<a alt="{{projectUrl slug}}">
 				<img class="works-dv-bg-img" src="{{heroImage.url}}">
+				</a>
 		</div>
 {{/each}}
 
@@ -125,6 +126,6 @@ $(".love-item").hover(function() {
     $(this).siblings(".love-item").css('opacity', '0.2');
 }, function() {
     $(this).siblings(".love-item").css('filter', 'blur(0px) grayscale(0%)');
-        $(this).siblings(".love-item").css('opacity', '1');
+    $(this).siblings(".love-item").css('opacity', '1');
 });
 </script>
