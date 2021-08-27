@@ -46,6 +46,7 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 
 
 <!-- MOBILE-->
+	
 	<div id="featured_project">
 		{{#each generals}}
 		{{#ifEquals title "About"}}
@@ -79,6 +80,8 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 
 {{#each data.projects.results}}
 		<div class="works-dv-ittem">
+				<h3 class="Hello_h2 works-dv-title" style="color: #fff">{{{featrueText}}}</h3>
+
 				<p class="Cintillo love-c@ategories works-dv-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
 				<a alt="{{projectUrl slug}}">
 				<img class="works-dv-bg-img" src="{{heroImage.url}}">
