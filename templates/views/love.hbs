@@ -47,7 +47,16 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 
 <!-- MOBILE-->
 	
-	
+	<div id="featured_project">
+		{{#each generals}}
+		{{#ifEquals title "About"}}
+		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
+			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
+			</div>
+		</div>
+		{{/ifEquals}}
+		{{/each}}
+	</div>
 
 	<div class="featured_project-red">
 		<div class="home-block" style="padding-bottom: 10vh; padding-top: 10vh;border-bottom: 0;" data-aos="fade-up" data-aos-delay="0">
