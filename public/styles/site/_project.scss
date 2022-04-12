@@ -483,6 +483,10 @@ $aos-distance: 25px; // It has to be above import
 	min-height: 2vh;
 	position: relative;
 	display: block;
+   	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+
+			margin: 10vh 0;
+		}
 }
 
 #project-img_2-container{
@@ -501,8 +505,6 @@ $aos-distance: 25px; // It has to be above import
     background-position: center;  
    	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
 		height: 30vh;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
 	}
 
 }
