@@ -1,0 +1,199 @@
+<script type="text/javascript">
+$("#navBar-list").css('display', 'none');
+</script>
+
+<script type="text/javascript">
+	$(".page-transition-gradient").animate({
+		top:'100vh'
+		},0,"easeInOut",function(){
+	});
+</script>
+
+
+    <script src="../../js/mousePlayground_yellow.js"></script>
+    <div id="canvasContainer_yellow" ></div>
+
+{{#each generals}}
+	{{#ifEquals title "About"}}
+
+
+<!-- **********************
+<div id="home-tile_info-container" style="background-image: none !important">
+	<div class="home-info_text-container" id="info-1">
+		<p class="Curly_text_p"></p>
+	</div>
+	<div id="home-title-container"  data-aos="fade-up" data-aos-delay="0">
+		<h1 class="Main-Title" id="index-title" >{{{HeroText}}}</h1>
+	</div>
+	<div class="home-info_text-container" id="info-2"  data-aos="fade-up" data-aos-delay="100">
+		<p class="Curly_text_p">{{{HeroSubtitle}}}</p>
+	</div>
+</div>
+
+
+
+<div id="home-services-contaner">
+	<div class="home-service-brick"  style="background-image: url('{{image_SERVICE_00.url}}');"  data-aos="fade-up" data-aos-delay="150" >
+		<h3 class="Voice_h3">{{{service_00}}}</h3>
+	</div>
+	<div class="home-service-brick" style="background-image: url('{{image_SERVICE_01.url}}');"  data-aos="fade-up" data-aos-delay="50" >
+		<h3 class="Voice_h3">{{{service_01}}}</h3>
+	</div>
+	<div class="home-service-brick"   style="background-image: url('{{image_SERVICE_02.url}}');"  data-aos="fade-up" data-aos-delay="0" >
+		<h3 class="Voice_h3">{{{service_02}}}</h3>
+	</div>
+	<div class="home-service-brick"   style="background-image: url('{{image_SERVICE_03.url}}');"  data-aos="fade-up" data-aos-delay="0" >
+		<h3 class="Voice_h3">{{{service_03}}}</h3>
+	</div>
+	<div class="home-service-brick" style="background-image: url('{{image_SERVICE_04.url}}');"  data-aos="fade-up" data-aos-delay="50" >
+		<h3 class="Voice_h3">{{{service_04}}}</h3>
+	</div>
+	<div class="home-service-brick"  style="background-image: url('{{image_SERVICE_05.url}}');"  data-aos="fade-up" data-aos-delay="150" >
+		<h3 class="Voice_h3">{{{service_05}}}</h3>
+	</div>
+</div>
+
+// mismo que abajo pero editable
+<div class="home-block" style="padding-bottom: 25vh; padding-top: 25vh;border-bottom: 0; top: 10vh;">
+	<div class="home-container home-info" id="pill_home"  >
+		<h2 class="Hello_h2 contact-pill">{{{Pill}}}</h2>
+	</div>
+</div>
+
+******* -->
+
+<div class="home-block" style="padding-top: 16vh;">
+	<div class="home-container" data-aos="fade-up" data-aos-delay="0">
+		<h2 class="Hello_h2">{{{service_00}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_00.url}}');" ></div>
+	</div>
+	<div class="home-container" data-aos="fade-up" data-aos-delay="50">
+		<h2 class="Hello_h2">{{{service_01}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_01.url}}');" ></div>
+	</div>
+	<div class="home-container" data-aos="fade-up" data-aos-delay="100" >
+		<h2 class="Hello_h2">{{{service_02}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_02.url}}');" ></div>
+	</div>
+	<div class="home-container" data-aos="fade-up" data-aos-delay="150" >
+		<h2 class="Hello_h2">{{{service_03}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_03.url}}');" ></div>
+	</div>
+	<div class="home-container" data-aos="fade-up" data-aos-delay="200">
+		<h2 class="Hello_h2">{{{service_04}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_04.url}}');" ></div>
+	</div>
+	<div class="home-container" data-aos="fade-up" data-aos-delay="200">
+		<h2 class="Hello_h2">{{{service_05}}}</h2>
+		<div class="home-services-image" style="background-image: url('{{image_SERVICE_05.url}}');" ></div>
+	</div>
+</div>
+
+
+
+<div class="home-block" style="padding-bottom: 25vh; padding-top: 20vh;border-bottom: 0;" >
+	<div class="home-container home-info" id="pill_home">
+		<h2 class="Hello_h2 contact-pill" style="font-size: 5vh !important; line-height: 5vh !important; width: 100%">{{{Pill}}}</h2>
+	</div>
+</div>
+
+<!-- **
+<div id="home-tile_info-container_B">
+	<div class="home-info_text-container" id="info-3">
+		<p class="Curly_text_p"  ></p>
+	</div>
+	<div id="home-title-container">
+		<h1 class="Main-Title" id="index-title">{{{HeroText_II}}}</h1>
+	</div>
+	<div class="home-info_text-container" id="info-2">
+		<p class="Curly_text_p" >{{{HeroSubtitle_II}}}</p>
+	</div>
+</div>
+
+<div id="home-extra_info-container">
+	<p class="Common_Text_p">{{{Description}}}</p>
+******************************** -->
+<div class="home-block" id="home-img">
+	<div id="home-img_me-title_a">
+		<a alt="/works">
+			<h2 class="Hello_h2" style="color: #fff; font-size: 1em;">{{{buttonText_ABOUT}}}</h2>
+		</a>
+	</div>
+	<div id="home-img_me-01" class="home-img_me"   style="background-image: url('{{image_projects_ABOUT_01.url}}');"></div>
+	<div id="home-img_me-03" class="home-img_me"  style="background-image: url('{{image_projects_ABOUT_02.url}}'); overflow: hidden;">
+		<div class="item__img item__img--t1" style="background-image: url('{{image_ABOUT.url}}'); pointer-events: none !important;">
+			<div class="works-featured_image" style="background-image: url('{{image_ABOUT.url}}'); pointer-events: none;" >
+				{{#if video_ABOUT}}
+				<iframe allow="autoplay;" class="video-about" src="https://player.vimeo.com/video/{{{video_ABOUT}}}?background=true" style="
+					position:absolute;
+					top:0%;
+					left: 0%;
+					height:120vh;
+					overflow: hidden;
+					pointer-events: none;
+					" frameborder="0">				
+				</iframe>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+	<div id="home-img_me-02" class="home-img_me" style="background-image: url('{{image_projects_ABOUT_03.url}}');"></div>
+</div>
+
+<div class="home-block" id="home-los_salvajes-container" style="">
+		<p  class="Common_Text_p" style="opacity: 0.5">{{{HeroSubtitle_II}}}</p>
+		<div id="home-los_salvajes-img" style="background-image: url('{{image_TEAM.url}}');"></div>
+		<h2 class="Hello_h2">{{{HeroText_II}}}</h2>
+		<p  class="Common_Text_p">{{{Description}}}</p>
+</div>
+
+<div class="home-block" style="padding-bottom: 20vh;">
+	<div class="home-container" >
+		<h2 class="Hello_h2">{{{CONTACT_PHONE_LABEL}}}</h2>
+		<p class="Common_Text_p" style="color: rgb(1,1,1,1)">{{{CONTACT_PHONE_FILL}}}</p>
+	</div>
+	<div class="home-container" >
+		<h2 class="Hello_h2">{{{CONTACT_Email_LABEL}}}</h2>
+		<p class="Common_Text_p" style="color: rgb(1,1,1,1)">{{{CONTACT_Email_FILL}}}</p>
+	</div>
+	<div class="home-container"  >
+		<h2 class="Hello_h2">{{{CONTACT_Instagram_LABEL}}}</h2>
+		<p class="Common_Text_p" style="color: rgb(1,1,1,1)">{{{CONTACT_Instagram_FILL}}}</p>
+	</div>
+	<div class="home-container" >
+		<h2 class="Hello_h2">{{{CONTACT_Pinterest_LABEL}}}</h2>
+		<p class="Common_Text_p" style="color: rgb(1,1,1,1)">{{{CONTACT_Pinterest_FILL}}}</p>
+	</div>
+	<div class="home-container">
+		<h2 class="Hello_h2">{{{CONTACT_Location_LABEL}}}</h2>
+		<p class="Common_Text_p" style="color: rgb(1,1,1,1)">{{{CONTACT_Location_FILL}}}</p>
+	</div>
+</div>
+
+<div style="width: 100vw; height: 10vh;">
+	
+</div>
+
+	{{/ifEquals}}
+{{/each}}
+
+<!-- *********************************** 
+
+
+
+
+
+<div class="home-block" id="home-img_works">
+	<div id="home-img_me-title">
+		<a href="/works">
+			<h2 class=".Hello_h2">See all projects</h2>
+		</a>
+	</div>
+	<div id="home-img_me-04" class="home-img_me" ></div>
+	<div id="home-img_me-05" class="home-img_me"></div>
+	<div id="home-img_me-06" class="home-img_me" ></div>
+</div>
+
+ *********************************** -->
+
+
