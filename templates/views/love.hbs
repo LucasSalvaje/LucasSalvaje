@@ -54,13 +54,10 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 	<div id="featured_project">
 		{{#each generals}}
 		{{#ifEquals title "About"}}
-		<a alt="{{projectUrl slug}}">
 		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
 			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
 			</div>
 		</div>
-
-				</a">
 		{{/ifEquals}}
 		{{/each}}
 	</div>
@@ -84,6 +81,7 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 				<p class="Cintillo love-c@ategories works-dv-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
 				<a alt="{{projectUrl slug}}">
 				<!-->
+				<a alt="{{projectUrl slug}}">
 				<img class="works-dv-bg-img" src="{{heroImage.url}}">
 				</a>
 		</div>
