@@ -54,10 +54,13 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 	<div id="featured_project">
 		{{#each generals}}
 		{{#ifEquals title "About"}}
+		<a alt="{{projectUrl slug}}">
 		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
 			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
 			</div>
 		</div>
+
+				</a">
 		{{/ifEquals}}
 		{{/each}}
 	</div>
