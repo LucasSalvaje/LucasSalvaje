@@ -19,7 +19,7 @@ $("#navBar-list").css('display', 'none');
 $(".Voice_h3").css('color', 'rgba(255,255,255,1)');
 $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
 </script>
-<div id="project-background_color" data-aos="flip-down" style="background-color: black"></div>
+<div id="project-background_color" data-aos="flip-down" style="background:black;"></div>
 
 <script type="text/javascript">
 	var isMobile = {
@@ -43,9 +43,9 @@ $(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
     }
 };
 	if(isMobile.any()){
-		$('body').css('background-color', 'black');
+		$('body').css('background-color', 'rgba(0,0,0,1)');
 	}else{
-			$('body').css('background-color', 'rgba(226,226,226,1)');
+			$('body').css('background-color', 'rgba(0,0,0,1)');
 	}
 	$('#project-background_color').css('background-color', '{{data.project.bgColor}}');
 </script>
