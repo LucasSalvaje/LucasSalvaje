@@ -69,13 +69,13 @@
 }
 
 @keyframes color-change {
-  0% { color: #D83A56;rotate(0deg); }
+  0% { color: #D83A56; }
   12% { color: #FF616D; }
   25% { color: #FFEAC9; }
-  50% { color: #fff; rotate(180deg); }
+  50% { color: #fff; }
   65% { color: #FFEAC9; }
   88% { color: #FF616D; }
-  100% { color: #D83A56; rotate(360deg);}
+  100% { color: #D83A56; }
 
 }
 
