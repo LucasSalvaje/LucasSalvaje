@@ -58,13 +58,13 @@
 }
 
 .MetaColorText {
-  animation: color-change 1s infinite;
+  animation: color-change 40s infinite;
 }
 
 @keyframes color-change {
-  0% { color: #FFF; }
-  50% { color: #9010FF; }
-  100% { color: #9010FF; }
+  0% { color: #FFBD69; }
+  50% { color: #FE346E; }
+  100% { color: #381460; }
 }
 
 
