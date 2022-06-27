@@ -40,7 +40,7 @@ exports = module.exports = function (app) {
 	app.get('/works/:category?', routes.views.works);
 	app.get('/works/project/:project', routes.views.project);
 	app.get('/contact', routes.views.contact);
-	app.get('/wip', routes.views.gallery);
+	app.get('/reel', routes.views.gallery);
 
 	app.get('/admin', middleware.requireUser, routes.views.gallery);
 };
