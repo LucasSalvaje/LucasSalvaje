@@ -62,6 +62,10 @@
   font-family: 'Flyer', serif !important;
   font-size: 3.6rem  !important;;
   font-weight: bold;
+  	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
+	  font-size: 1.9rem  !important;;
+
+	}
 }
 
 @keyframes color-change {
