@@ -1,108 +1,76 @@
+<script type="text/javascript">
+$("#navBar-list").css('display', 'none');
+</script>
+ <script src="../../js/mousePlayground_yellow.js"></script>
+    <div id="canvasContainer_yellow" ></div>
+    
+{{#if data.project.dark}}
+<script type="text/javascript">
+	$('body').addClass('dark_project');
+	$('body').css('opacity', '1')
+</script>
+{{else}}
+	<script type="text/javascript">
+	$('body').addClass('dark_project');
+</script>
+{{/if}}
+
+<script type="text/javascript">
+$(".Voice_h3").css('color', 'rgba(255,255,255,1)');
+$(".Cintillo").css('color', 'rgba(255,255,255,0.3)');
+</script>
+<div id="project-background_color" data-aos="flip-down"></div>
+
+<script type="text/javascript">
+	var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+	if(isMobile.any()){
+		$('body').css('background-color', '#000');
+	}else{
+			$('body').css('background-color', 'rgba(226,226,226,1)');
+	}
+	$('#project-background_color').css('background-color', '{{data.project.bgColor}}');
+</script>
+
 
 <script type="text/javascript">
 	$(".page-transition-gradient").animate({
 		top:'100vh'
-		},0,"easeInOut",function(){
+		},200,"easeInOut",function(){
 	});
-	$('#hello_world').css('height','100vh')
 </script>
 
 
-<!--
-**************** -->
-
-
-<main id="works-all"  data-aos="fade-up">
-	<div data-scroll>
-		<div class="content">
-			<!-- HOME IMAGE-->
-			<div style=" position: fixed; width: 80vw; height: 70vh; top: 0; margin-top:15vh;overflow: hidden; border-radius: 6px; box-shadow: 6px 6px 60px rgba(0,0,0,0.6);">
-				<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
-								<iframe allow="autoplay;" src="https://player.vimeo.com/video/721511587?h=224ec22425&amp;background=true" style="
-										position:absolute;
-										top:0%;
-										left: 0%;
-										width:100vw;
-										height:100vh; 
-										transform: translate(-10vw, -10vh);
-										overflow: hidden;
-										pointer-events: none;
-										" frameborder="0"></iframe>
-				</div>
-			</div>
+<div id="project" style="padding-top: 15vh;">
+	
+	<!-- Video 00 -->
+	<div id="project-img_2_v0-container">
+		<div class="embed-container">
+			<iframe src="https://player.vimeo.com/video/721511587?h=224ec22425?autoplay=0&color=FF9C9C&title=0&byline=0&portrait=0&autopause=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-aos="fade-up" data-aos-delay="100"></iframe>
 		</div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<p class="Cintillo" style="color: rgba(226,226,226,0.45) !important" id="video_00-info" ></p>
 	</div>
 
+<!-- scripts -->
 
-
-
-{{#each generals}}
-		{{#ifEquals title "About"}}
-			<style type="text/css">
-				.item__img-wrap {
-					border-radius: {{{WORKS_BORDER_RADIUS}}}px !important;
-				}
-			</style>
-		{{/ifEquals}}
-{{/each}}
-
-
-	<!-- MOBILE-->
-	<div id="featured_project">
-
-		<div class="item__img item__img--t1" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none !important;">
-			<div class="works-featured_image" style="background-image: url('{{image_WORKS.url}}'); pointer-events: none;" >
-				<iframe allow="autoplay;" class="video-featured" src="https://player.vimeo.com/video/721511587?background=true" style="
-					position:absolute;
-					top:0%;
-					left: 0%;
-					overflow: hidden;
-					pointer-events: none;
-					" frameborder="0">				
-				</iframe>
-			</div>
-		</div>
-	</div>
-
-	<div class="featured_project-red">
-		<div class="home-block" style="padding-bottom: 10vh; padding-top: 10vh;border-bottom: 0;" data-aos="fade-up" data-aos-delay="0">
-			<div class="home-container home-info" id="pill_home">
-				{{#each generals}}{{#ifEquals title "About"}}
-				<h2 class="Hello_h2 contact-pill" style="font-size: 6vh !important; line-height: 6vh !important; width: 100%; color: rgb(1,1,1) !important">{{{HeroText}}}<br><br><span style="text-align: right; padding-left: 80vw;">↓</span></h2>
-				{{/ifEquals}}{{/each}}
-			</div>
-		</div>
-	</div>
-
-
-	<div class="masonry">
-		{{#each data.projects.results}}
-		<div class="mItem">
-			<a alt="{{projectUrl slug}}">
-				<h3 class="Hello_h2" style="color: #fff">{{{featrueText}}}</h3>
-			</a>
-			<p class="Cintillo love-categories" style="color: rgba(255,255,255,1)">{{#each categories}} {{name}} -{{/each}}</p>
-			<img class="img_masonry" src="{{heroImage.url}}">
-		</div>
-		{{/each}}
-		<div style="width: 100vw; height: 5vh;">
-		</div>
-	</div>
-</main>
-
-	<!-- SCRIPTS-->
-
-
-<script type="text/javascript">
-$('.works-categories').text(function(_, txt) {
-	return txt.slice(0, -1);
-});</script>
-
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/demo.js"></script>
-
-<script type="text/javascript">
-$('.love-categories').text(function(_, txt) {
-	return txt.slice(0, -1);
-});</script>
+<script src="../../js/projectAnimations.js"></script>
 
