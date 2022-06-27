@@ -50,12 +50,20 @@
 	top: 5vh;
 	right: 6vw;
 	text-align: right;
+	animation: color-change 2s infinite;
 	@media screen and (min-device-width: 175px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1) {
 		a{
-			color: white !important;
+		
 		}
 	}
 }
+
+@keyframes color-change {
+  0% { color: red !important; }
+  50% { color: blue !important; }
+  100% { color: red !important; }
+}
+
 
 #navLink-About{
 	bottom: 5vh;
@@ -95,3 +103,5 @@
 		display: none;
 	}
 }
+
+
